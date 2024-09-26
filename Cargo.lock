@@ -795,7 +795,7 @@ dependencies = [
 [[package]]
 name = "electrumd"
 version = "0.1.0"
-source = "git+https://github.com/shesek/electrumd?rev=b35d9db285d932cb3c2296beab65e571a2506349#b35d9db285d932cb3c2296beab65e571a2506349"
+source = "git+https://github.com/cachet-jp/electrumd?rev=fdec218b25e88b5eaabd889d353db71daf140b32#fdec218b25e88b5eaabd889d353db71daf140b32"
 dependencies = [
  "bitcoin_hashes 0.10.0",
  "home",

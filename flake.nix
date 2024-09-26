@@ -34,7 +34,8 @@
           src = craneLib.cleanCargoSource ./.;
 
           nativeBuildInputs = with pkgs; [ rustToolchain clang ]; # required only at build time
-          buildInputs = with pkgs; [ ]; # also required at runtime
+          buildInputs = with pkgs; [ ] # also required at runtime
+            ++ lib.optionals stdenv.hostPlatform.isDarwin [ darwin.apple_sdk.frameworks.Security ];
 
           envVars =
             {
